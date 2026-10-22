@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inicio {
+    background-color: white;
+    padding: 70px 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 35px 18px;
+    }
+
+    .inicio {
+        padding: 50px 18px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+</style>
+<body>
+
+    <header>
+        <h2>MeuSite</h2>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <h1>Bem-vindo ao meu site!</h1>
+            <p>Um site simples, moderno e feito para te ajudar.</p>
+            <a href="#sobre" class="botao">Saiba mais</a>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre nós</h2>
+            <p>
+                Este é um site criado para ajudar as pessoas com seus.
+            </p>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco!</p>
+            <a href="mailto:contato@exemplo.com" class="botao">
+                Enviar e-mail
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MeuSite. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
